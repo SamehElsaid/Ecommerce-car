@@ -1,0 +1,455 @@
+:root {
+    --transition-all: all .4s linear;
+    --main-color: #FDC101;
+}
+
+header {
+    height: auto;
+}
+
+.imgbg {
+    height: auto;
+
+}
+
+.imgbg::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+}
+
+.imgbg img {
+    object-fit: contain;
+    height: auto;
+    animation: scaleN 20s linear infinite alternate !important;
+}
+
+.textImg {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.textImg p {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.textImg h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: normal;
+    color: white;
+}
+
+.textImg h2 span {
+    color: var(--main-color);
+}
+
+/*  */
+.textDis{
+    text-align: center;
+}
+.textDis h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.textDis p {
+    font-size: 14px;
+    color: #6c6d72;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.allH2Span {
+    height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.allH2Span span{
+    display: inline-flex;
+    height: 2px;
+    width: 50px;
+    background-color: #eee;
+}
+.allH2Span .orange{
+    display: inline-flex;
+    height: 2px;
+    width: 50px;
+    background-color: var(--main-color);
+}
+.boxHold{
+    text-align: center;
+    position: relative;
+}
+.boxHold h3{
+    font-size: 18px;
+    transition: var(--transition-all);
+    cursor: pointer;
+    font-weight: bold;
+}
+.boxHold h4{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.boxHold p{
+    font-size: 13px;
+    color: #6c6d72;
+}
+.boxHold span{
+    font-size: 16px;
+    color: #ff8500;
+    font-weight: bold;
+}
+.iconHold {
+    cursor: pointer;
+    position: absolute !important;
+    top: 0;
+    right: 10px;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+.boxHold h3:hover{
+    color: var(--main-color);
+}
+.model{
+    border-right: 1px solid #eee;
+}
+
+.footerBox{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.model .img{
+    margin: 20px 0;
+    transition: var(--transition-all);
+}
+.model .img:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.footerBox .carGrid{
+    display: flex;
+    align-items: center;
+}
+.footerBox i{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footerBox p{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #a5a5a5;
+}
+/*  */
+/*  */
+.headCategory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.headCategory h2{
+    font-size: 25px;
+    color: #191919;
+    font-weight: bold;
+    margin: 0;
+}
+.headCategory h2 span{
+    color: var(--main-color);
+}
+.category p{
+    margin: 0;
+    font-size: 14px;
+    color: #6c6d72;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: var(--transition-all);
+}
+.category p:hover{
+    color: var(--main-color);
+}
+.img-cate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box-cate .img{
+    padding: 20px;
+    object-fit: scale-down;
+}
+/*  */
+.feature ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.feature ul li{
+    width: 25%;
+    text-align: center;
+    padding: 0 10px 0 0;
+    background: #eee;
+    padding: 20px 15px;
+    transition: var(--transition-all);
+    
+}
+.feature ul li:first-of-type{
+    background-color: white;
+}
+.feature ul li:hover{
+    background-color: white;
+}
+.feature ul li:hover a{
+    color: black;
+
+}
+.feature ul li:first-of-type a{
+    color: black;
+}
+.feature ul li a{
+    transition: var(--transition-all);
+    border-radius: 0;
+    border: none;
+    color: #6c6d72;
+    text-decoration: none;
+}
+.boxEngine {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.boxEngine h4{
+    margin: 0;
+    font-size: 18px;
+    color: #6c6d72;
+}
+.boxEngine h5{
+    margin: 0;
+    font-size: 18px;
+    color: #191919;
+}
+.btn-hover{
+    padding: 8px 60px !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+    border: 1px solid ;
+    transition: var(--transition-all);
+}
+.mN{
+    margin-bottom: 30px;
+}
+.feature .boxHold h3{
+    font-size: 25px;
+    margin: 30px 0;
+}
+.feature .boxHold span{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+}
+.feature .model:hover .btn-hover{
+    background-color: black;
+}
+.feature .model:hover span:nth-of-type(1){
+    transform: translateY(-25px);
+}
+.feature .model:hover span:nth-of-type(2){
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.btn-hover span{
+    transition: var(--transition-all);
+}
+.btn-hover span:nth-of-type(1){
+    position: relative;
+    display: inline-block;
+}
+.btn-hover span:nth-of-type(2){
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20px);
+}
+.theme{
+    padding: 80px 0;
+    background-image: url(../img/aboutus-2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.theme::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+}
+.boxAllTheme{
+    padding-left: 30px;
+    border-left: 4px solid white;
+    position: relative;
+}
+.boxTheme{
+    padding: 80px 0;
+}
+.boxTheme p{
+    color: white;
+}
+.boxTheme h2{
+    line-height: 72px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    color: #fff;
+    max-width: 680px;
+    margin: 0 0 35px;
+    
+}
+.vedio{
+    color: white;
+    display: flex;
+}
+.vedio .icon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--main-color);
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.vedio .icon::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: scale2 3s linear infinite  !important;
+
+}
+.vedio .textVed{
+    display: grid;
+    font-size: 16px;
+}
+.tech .row{
+    height: 100%;
+    align-content: space-between;
+}
+.imgBox{
+    position: relative;
+    overflow: hidden;
+
+}
+.techImg:hover .textTech{
+    bottom: 0;
+}
+.techImg:hover img{
+    transform: scale(1.2);
+}
+.techImg img{
+    transition: var(--transition-all);
+}
+.textTech{
+    position: absolute;
+    bottom: -65px;
+    padding: 30px;
+    overflow: hidden;
+    background: #00000040;
+    color: white;
+    width: 100%;
+    transition: var(--transition-all);
+}
+.textTech h4{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom:20px;
+    text-transform: capitalize!important;
+    transition: var(--transition-all);
+    cursor: pointer;
+}
+.textTech h4:hover{
+    color: var(--main-color);
+}
+.textTech p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@keyframes scaleN {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .img-cate{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .img-cate img{
+        object-fit: scale-down;
+    }
+    .imgbg{
+        height: 100vh;
+    }
+    .imgbg img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .feature ul{
+        flex-wrap: wrap;
+    }
+    .discover {
+        overflow: hidden;
+    }
+
+}

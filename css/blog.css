@@ -1,0 +1,146 @@
+:root {
+    --transition-all: all .4s linear;
+    --main-color: #FDC101;
+}
+
+.imgbg img {
+    animation: none !important;
+}
+
+.textImg h2 {
+    font-size: 15px;
+}
+
+.textImg {
+    bottom: 10%;
+    top: auto;
+    transform: translate(-50%, -0%);
+
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.textImg a {
+    color: white;
+    text-decoration: none;
+}
+
+.boxBlog {
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 3px 3px 11px rgb(0 0 0 / 6%);
+    margin-bottom: 30px;
+}
+
+.imgBlog {
+    position: relative;
+}
+
+.boxBlog:hover .overlay {
+    opacity: 1;
+}
+
+.boxBlog:hover .overlay h3::before {
+    transform: translateX(-0%);
+
+}
+
+.imgBlog .overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(25, 25, 25, 0.56), rgba(255, 133, 0, 0.55));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-all);
+}
+
+.imgBlog .overlay h3 {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease-in-out 0s;
+    padding: 5px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBlog .overlay h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    transition: var(--transition-all);
+    transform: translateX(-110%);
+}
+
+.iconBlog {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.textBlog {
+    padding: 20px 30px 25px;
+}
+
+.textBlog p {
+    font-size: 13px;
+    color: #a5a5a5;
+    line-height: 1.8;
+}
+.textBlog h4{
+    cursor: pointer;
+    color: #191919;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.38em;
+    transition: var(--transition-all);
+}
+.textBlog h4:hover{
+    color: var(--main-color);
+}
+.blog .row{
+    height: 100%;
+}
+.blog ul{
+    display: flex;
+}
+.blog ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #8f8f8f;
+    transition: var(--transition-all);
+}
+.blog .ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.blog ul li:hover,
+.blog ul .active{
+    background-color: var(--main-color);
+}

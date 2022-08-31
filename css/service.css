@@ -1,0 +1,94 @@
+:root {
+    --transition-all: all .4s linear;
+    --main-color: #FDC101;
+}
+.contentAbout {
+    gap: 30px 0;
+}
+.boxAbout{
+    display: block;
+    transition: var(--transition-all);
+    cursor: pointer;
+}
+.boxN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxN p {
+    font-size: 6rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    color: white;
+    margin-bottom: 0;
+    transition: var(--transition-all);
+}
+.textCentent{
+    padding: 0px 20px;
+}
+.textCentent h3{
+    font-size: 1.5rem;
+    transition: var(--transition-all);
+    font-weight: bold;
+    color: #2B2E4A;
+}
+.textCentent p{
+    width: 100%;
+    font-size: .9rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    color: #8486A0;
+    transition: var(--transition-all);
+}
+.contentAbout .active,
+.contentAbout .boxAbout:hover
+{
+    background-color: #2B2E4A;
+}
+.contentAbout .active .boxN p,
+.contentAbout .boxAbout:hover .boxN p{
+    color: #1C1E32;
+}
+.contentAbout .active .textCentent p,
+.contentAbout .boxAbout:hover .textCentent p{
+    color: #8486A0;
+    
+}
+.contentAbout .active .textCentent h3,
+.contentAbout .boxAbout:hover .textCentent h3{
+    color: white;
+    
+}
+.off .container{
+    padding: 130px 0;
+    background-image: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../img/bg-banner.jpg);
+    background-position: left;
+    background-attachment: fixed;
+}
+.off .container h3{
+    color: var(--main-color);
+}
+.off .container h4{
+    color: white;
+}
+.off .container p{
+    color: #8486A0;
+}
+.off .btn-danger{
+    padding: 16px 48px;
+}
+h2.text-center.fw-bold.display-6.mb-5 {
+    color: #2B2E4A;
+}
+@media screen and (max-width:991px) {
+    .boxAbout{
+        width: 48%;
+    }
+}
+@media screen and (max-width:767px) {
+    .boxAbout{
+        width: 100%;
+    }
+}
